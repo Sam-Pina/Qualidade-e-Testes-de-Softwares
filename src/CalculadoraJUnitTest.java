@@ -22,6 +22,30 @@ public class CalculadoraJUnitTest {
 		
 		Assert.assertEquals(10, soma);
 		
+	
+		Soma calc10 = new Soma();
+		
+		int soma1 = calc10.somar(30,7);
+		System.out.println(soma1);
+		
+		Assert.assertEquals(37, soma1);
+		
+
+		Soma calc11 = new Soma();
+		
+		int soma2 = calc11.somar(32,8);
+		System.out.println(soma2);
+		
+		Assert.assertEquals(40, soma2);
+		
+		
+		Soma calc12 = new Soma();
+		
+		int soma3 = calc12.somar(13,7);
+		System.out.println(soma3);
+		
+		Assert.assertEquals(20, soma3);
+		
 		/**
 		 * Subtração:
 		 * Esse teste será verdadeiro utilizando a subtracao como operador, estamos pegando a classe Subtracao e instanciando uma variavel 'calc2'
@@ -38,6 +62,27 @@ public class CalculadoraJUnitTest {
 		
 		Assert.assertEquals(23, sub);
 		
+		Subtracao calc21 = new Subtracao();
+		
+		int sub1 = calc21.subtrair(80, -7);
+		System.out.println(sub1);
+		
+		Assert.assertEquals(87, sub1);
+		
+		Subtracao calc22 = new Subtracao();
+		
+		int sub2 = calc22.subtrair(10, 7);
+		System.out.println(sub2);
+		
+		Assert.assertEquals(3, sub2);
+		
+		Subtracao calc23 = new Subtracao();
+		
+		int sub3 = calc23.subtrair(600, 1);
+		System.out.println(sub3);
+		
+		Assert.assertEquals(599, sub3);
+		
 		/**
 		 * Multiplicação:
 		 * Esse teste será falso utilizando a multiplicacao como operador, estamos pegando a classe Multiplicação e instanciando uma variavel 'calc3'
@@ -53,6 +98,29 @@ public class CalculadoraJUnitTest {
 		System.out.println(mult);
 		
 		Assert.assertEquals(60, mult);
+		
+		Multiplicacao calc = new Multiplicacao();
+				
+		int mult1 = calc.multiplicar(2, 10);
+		System.out.println(mult);
+		
+		Assert.assertEquals(20, mult1);
+		
+		
+		Multiplicacao calc5 = new Multiplicacao();
+				
+		int mult2 = calc5.multiplicar(2, -10);
+		System.out.println(mult2);
+		
+		Assert.assertEquals(-20, mult2);
+		
+		
+		Multiplicacao calc6 = new Multiplicacao();
+				
+		int mult3 = calc6.multiplicar(22, -10);
+		System.out.println(mult3);
+		
+		Assert.assertEquals(-220, mult3);
 		
 		/**
 		 * Divisao:
@@ -72,5 +140,31 @@ public class CalculadoraJUnitTest {
 		Assert.assertEquals(15, div);
 		
 		*/
+		
+		System.out.println("\nCalculos de Divisao:");
+		Divisao calc41 = new Divisao();
+						
+		int div = calc41.dividir(30, 2);
+		System.out.println(div);
+		
+		Assert.assertEquals(15, div);
+		
+		System.out.println("\nCalculos de Divisao:");
+		Divisao calc42 = new Divisao();
+						
+		int div1 = calc42.dividir(8, 2);
+		System.out.println(div1);
+		
+		Assert.assertEquals(4, div1);
+		
+		System.out.println("\nCalculos de Divisao:");
+		Divisao calc43 = new Divisao();
+						
+		int div2 = calc43.dividir(9, 3);
+		System.out.println(div);
+		
+		Assert.assertEquals(3, div2);
+		
+		//calculos 
 	}
 }
